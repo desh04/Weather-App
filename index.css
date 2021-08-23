@@ -1,19 +1,57 @@
 body {
-  background-color: #251c75;
+  background: rgb(23, 14, 162);
+  background: linear-gradient(
+    90deg,
+    rgba(23, 14, 162, 1) 0%,
+    rgba(11, 65, 177, 1) 68%,
+    rgba(17, 141, 166, 1) 100%
+  );
 }
 
-.mainForm {
+.heading {
   color: white;
   text-align: center;
 }
 
+.mainForm {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: white;
+  text-align: center;
+  display: flex;
+  height: 35px;
+  width: 70%;
+  border-radius: 10px;
+}
+
 #submit-btn {
   background-color: red;
-  height: 25px;
+  height: 100%;
   width: 100px;
-  border: 2px solid white;
-  border-radius: 10px;
+  border: none;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
   font-weight: bold;
+  cursor: pointer;
+  order: 4;
+  flex: 1px;
+  margin-left: auto;
+}
+#InpCity {
+  height: 80%;
+  border: none;
+  order: 1;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  margin-left: 10px;
+  flex: 4;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+#submit-btn:hover {
+  color: white;
+  background-color: #b80000;
 }
 
 #box-container {
