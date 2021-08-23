@@ -1,0 +1,13 @@
+#weather-box {
+  border: 4px solid white;
+  border-radius: 10px;
+  background-color: #b0dbf5;
+  width: 250px;
+  float: left;
+  padding: 10px;
+  margin: 15px;
+}
+
+#weather-box h2 {
+  text-align: center;
+}
