@@ -10,15 +10,22 @@ document.querySelector("#submit-btn").addEventListener("click", (event) => {
   event.preventDefault();
 
   const cityName = document.getElementById("InpCity").value;
-  getweather(cityName).then((data) => {
-    console.log(data);
-    weatherBox(
-      data.name,
-      data.main.temp,
-      data.sys.country,
-      data.weather[0].main
-    );
-  });
+  getweather(cityName)
+    .then((data) => {
+      console.log(data);
+      weatherBox(
+        data.name,
+        data.main.temp,
+        data.sys.country,
+        data.weather[0].description,
+        data.weather[0].icon
+      );
+    })
+    .catch((error) => {
+      console.log(error);
+      console.log(error.message, error.cod, "hi");
+      alert("Please enter a valid city name.");
+    });
 });
 
 export function getweather(city) {

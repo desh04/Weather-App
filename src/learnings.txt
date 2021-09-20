@@ -1,0 +1,31 @@
+1. "inherit" keyword  :  The inherit keyword specifies that a property should inherit its value from its parent element.
+                      The inherit keyword can be used for any CSS property, and on any HTML element.
+          eg: span {
+                color: blue;
+              }
+              .extra span {
+                 color: inherit;
+              } // color will be blue(inderiting from the parent span)
+
+
+2. Pseudo-element : A CSS pseudo-elemeny is a keyword added to a selector that let us style a specific part of the element.
+        eg: "::first-line" let us change the style of first line. used like below- 
+        Syntex  p::first-line { //CSS code;}
+    Note: As a rule, double colons (::) should be used instead of a single colon (:). This distinguishes pseudo-classes from pseudo-elements.
+    other Pseudo-elements --
+    ::after (:after)
+    ::before (:before)
+    ::backdrop
+    ::first-letter (:first-letter)
+    ::first-line (:first-line)
+    ::file-selector-button
+
+etc..
+
+3. z - index :  The z-index property specifies the stack order of an element.
+                An element with greater stack order is always in front of an element with a lower stack order.
+                Note: z-index only works on positioned elements (position: absolute, position: relative, position: fixed, or position: sticky) and flex items (elements that are direct children of display:flex elements).
+                Note: If two positioned elements overlap without a z-index specified, the element positioned last in the HTML code will be shown on top.
+        syntex : z-index: auto|number|initial|inherit;
+
+
